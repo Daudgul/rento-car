@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
 import SectionOne from "../components/SectionOne";
+import SectionTwo from "../components/SectionTwo";
+import SectionThree from "../components/SectionThree";
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +17,8 @@ const Home: NextPage = () => {
     >
       <Navbar />
       <SectionOne />
+      <SectionTwo />
+      <SectionThree />
     </div>
   );
 };
