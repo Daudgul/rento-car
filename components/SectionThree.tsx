@@ -1,8 +1,9 @@
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import { GiTakeMyMoney } from "react-icons/gi";
-import carImg from "../public/Imgs/car4.png";
+import carImg from "../public/Imgs/carPoster.png";
+import "./SectionThree.module.css";
 
 const SectionThree = () => {
   return (
@@ -15,45 +16,30 @@ const SectionThree = () => {
             d="M0,32L48,74.7C96,117,192,203,288,202.7C384,203,480,117,576,90.7C672,64,768,96,864,122.7C960,149,1056,171,1152,176C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
         </svg>
-        <Box sx={{ display: "flex", background: "#fbf2e9", marginTop: "-5px" }}>
-          <Box
-            alignItems="center"
+        <Grid container bgcolor="#fbf2e9" marginY={-5}>
+          <Grid item width="40%" sm={6}>
+            <Image src={carImg} objectFit="cover" />
+          </Grid>
+          <Grid
+            item
+            sm={6}
             display={"flex"}
             flexDirection="column"
-            boxShadow={2}
-            paddingX={3}
-            margin={2}
+            justifyContent={"center"}
           >
-            <Box
-              sx={{
-                marginTop: "50px",
-                width: 270,
-                height: 275,
-                backgroundColor: "orange",
-                borderRadius: "80% 20% 76% 24% / 79% 25% 75% 21%",
-              }}
-            ></Box>
-            <Box
-              sx={{
-                width: 270,
-                height: 275,
-                backgroundColor: "rgba(240, 109, 33, 0.7)",
-                borderRadius: "17% 83% 15% 85% / 15% 85% 15% 85%",
-                transform: "translateY(-100%)",
-              }}
-            >
-              <Image
-                src={carImg}
-                width={300}
-                height={300}
-                style={{
-                  transform: " translateX(5%)",
-                  zIndex: 100,
-                }}
-              />
-            </Box>
-          </Box>
-        </Box>
+            <h2 className="sec__heading">
+              We provide premium car with high quality
+            </h2>{" "}
+            <p className="sec__pergraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas rem
+              ducimus quod! Dolorem nesciunt nihil iure exercitationem ab
+              voluptates quasi corrupti voluptatibus! Error exercitationem iure
+              possimus id. Obcaecati, adipisci illum
+            </p>
+            <p className="sec__detail">certificated by gurus</p>
+          </Grid>
+        </Grid>
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#fbf2e9"
