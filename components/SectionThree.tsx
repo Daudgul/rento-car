@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { GiTakeMyMoney } from "react-icons/gi";
 import carImg from "../public/Imgs/carPoster.png";
-import "./SectionThree.module.css";
+import Style from "./SectionThree.module.css";
 
 const SectionThree = () => {
   return (
@@ -27,16 +27,16 @@ const SectionThree = () => {
             flexDirection="column"
             justifyContent={"center"}
           >
-            <h2 className="sec__heading">
+            <h2 className={Style.heading}>
               We provide premium car with high quality
             </h2>{" "}
-            <p className="sec__pergraph">
+            <p className={Style.peragraph}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas rem
               ducimus quod! Dolorem nesciunt nihil iure exercitationem ab
               voluptates quasi corrupti voluptatibus! Error exercitationem iure
               possimus id. Obcaecati, adipisci illum
             </p>
-            <p className="sec__detail">certificated by gurus</p>
+            <p className={Style.details}>certificated by gurus</p>
           </Grid>
         </Grid>
 

@@ -1,5 +1,16 @@
-.sec__heading {
-  padding: 2px;
-  font-size: 50px;
+.heading {
+  font-size: 3rem;
   color: gray;
+  background: linear-gradient();
+}
+.peragraph {
+  color: lightgray;
+  padding: 16px 0;
+  font-weight: 500;
+}
+
+.details {
+  color: orange;
+  text-transform: uppercase;
+  font-weight: 700;
 }
